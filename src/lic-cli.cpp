@@ -28,7 +28,7 @@ int main(int argc, char **argv)
     
     Mat flowfield,licresult;
     flowfield = imread(inputfile, -1); //unchanged
-    cv::cvtColor(flowfield, flowfield, CV_RGB2BGR);
+    cv::cvtColor(flowfield, flowfield, cv::COLOR_RGB2BGR);
     licresult = Mat::zeros(cv::Size(flowfield.cols, flowfield.rows), CV_8UC1);
     PP lic(cv::Size(flowfield.cols, flowfield.rows));
     lic.ETF(flowfield, licresult,s,noiseupsample);

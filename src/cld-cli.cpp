@@ -38,14 +38,14 @@ int main(int argc, char **argv)
     //do the etf once , should avoid that
     cld.readSrc(inputfile);
 
-    cld.etf.flowField = cv::imread(inputflowfile,CV_LOAD_IMAGE_UNCHANGED);  
+    cld.etf.flowField = cv::imread(inputflowfile, cv::IMREAD_UNCHANGED);  
     if(! cld.etf.flowField.data )                              // Check for invalid input
         {
         cout <<  "Could not open or find a precomputed flowfield" << std::endl ;
         return -1;
         }
 
-    cv::cvtColor(cld.etf.flowField, cld.etf.flowField, CV_RGB2BGR);
+    cv::cvtColor(cld.etf.flowField, cld.etf.flowField, cv::COLOR_RGB2BGR);
     cld.genCLD();
     
     for(int i=0; i<FDoG_iteration; i++) 

@@ -27,9 +27,9 @@ int main(int argc, char **argv)
     int s= atoi(argv[4]);
     
     Mat inputimage,flowfield,licresult;
-    inputimage = imread(inputfile, CV_LOAD_IMAGE_COLOR); //unchanged
+    inputimage = imread(inputfile, cv::IMREAD_COLOR); //unchanged
     flowfield = imread(flowfile, -1); //unchanged
-    cv::cvtColor(flowfield, flowfield, CV_RGB2BGR);
+    cv::cvtColor(flowfield, flowfield, cv::COLOR_RGB2BGR);
     licresult = Mat::zeros(cv::Size(flowfield.cols, flowfield.rows), CV_8UC3);
     PP lic(cv::Size(flowfield.cols, flowfield.rows));
     lic.ETF_image(inputimage,flowfield, licresult,s);

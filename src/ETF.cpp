@@ -136,10 +136,10 @@ void ETF::rotateFlow(Mat& src, Mat& dst, float theta) {
 }
 
 void ETF::resizeMat(Size s) {
-    resize(gradientField, gradientField, s, 0, 0, CV_INTER_LINEAR);
-	resize(flowField, flowField, s, 0, 0, CV_INTER_LINEAR);
-	resize(refinedETF, refinedETF, s, 0, 0, CV_INTER_LINEAR);
-	resize(gradientMag, gradientMag, s, 0, 0, CV_INTER_LINEAR);
+    resize(gradientField, gradientField, s, 0, 0, cv::INTER_LINEAR);
+	resize(flowField, flowField, s, 0, 0, cv::INTER_LINEAR);
+	resize(refinedETF, refinedETF, s, 0, 0, cv::INTER_LINEAR);
+	resize(gradientMag, gradientMag, s, 0, 0, cv::INTER_LINEAR);
 }
 
 

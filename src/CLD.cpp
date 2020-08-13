@@ -51,7 +51,7 @@ void CLD::init(Size s) {
 }
 
 void CLD::readSrc(string file) {
-	originalImg = imread(file, CV_LOAD_IMAGE_GRAYSCALE);
+	originalImg = imread(file, IMREAD_GRAYSCALE);
 
 	result = Mat::zeros(Size(originalImg.cols, originalImg.rows), CV_8UC1);
 	DoG = Mat::zeros(Size(originalImg.cols, originalImg.rows), CV_32FC1);
@@ -200,7 +200,7 @@ void CLD::binaryThresholding(Mat & src, Mat & dst, const double tau) {
 void CLD::otsuThresholding(Mat & src, Mat & dst) {
     //GaussianBlur(src, src, Size(5, 5), 0, 0);
     src.convertTo(dst,CV_8UC1);
-    cv::threshold(dst, dst, 0, 255, CV_THRESH_BINARY | CV_THRESH_OTSU);
+    cv::threshold(dst, dst, 0, 255, cv::THRESH_BINARY | cv::THRESH_OTSU);
 }
 
 /**

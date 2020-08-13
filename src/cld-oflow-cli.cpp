@@ -65,7 +65,7 @@ int main(int argc, char **argv)
         //do the etf once , should avoid that
         cld.readSrc(inputname);
         //read etf
-        cld.etf.flowField = cv::imread(etfname,CV_LOAD_IMAGE_UNCHANGED);  
+        cld.etf.flowField = cv::imread(etfname,IMREAD_UNCHANGED);  
         if(! cld.etf.flowField.data )                              // Check for invalid input
             {
             cout <<  "Could not open or find a precomputed flowfield" << std::endl ;
@@ -73,7 +73,7 @@ int main(int argc, char **argv)
             }
         
         //permut etf rgb to bgr
-        cv::cvtColor(cld.etf.flowField, cld.etf.flowField, CV_RGB2BGR);
+        cv::cvtColor(cld.etf.flowField, cld.etf.flowField, COLOR_BGR2RGB);
         //generate drawing
         cld.genCLD();
         
@@ -103,7 +103,7 @@ int main(int argc, char **argv)
             char consistencyname[200];
             sprintf(consistencyname,"%s_%04d_%04d.pgm",input_consistency_root,frame,frame-1);
             //cout << "consistency : " << consistencyname << endl;
-            consistency = cv::imread(consistencyname, CV_LOAD_IMAGE_GRAYSCALE); 
+            consistency = cv::imread(consistencyname, IMREAD_GRAYSCALE); 
             //bad idea ... GaussianBlur(consistency, consistency, Size(5, 5), 0, 0);
             if(! consistency.data )                              // Check for invalid input
             {
@@ -115,7 +115,7 @@ int main(int argc, char **argv)
             char previousname[200];
             sprintf(previousname,"%s.%04d.%s",output_file_root,frame-1,input_file_ext);
             //cout << "previousresult : " << previousname << endl;
-            previous = cv::imread(previousname,CV_LOAD_IMAGE_GRAYSCALE); 
+            previous = cv::imread(previousname,IMREAD_GRAYSCALE); 
             
             //warp with optical flow
             warped.create( oflow.size(), CV_8UC1);

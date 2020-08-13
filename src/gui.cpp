@@ -242,7 +242,7 @@ void MyFrame::OnSaveResult(wxCommandEvent& event) {
 		return;
 	}
 
-	cv::cvtColor(drawPane->dis, drawPane->dis, CV_BGR2RGB);
+	cv::cvtColor(drawPane->dis, drawPane->dis, cv::COLOR_BGR2RGB);
 	cv::imwrite((const char*)saveFileDialog.GetPath().mb_str(), drawPane->dis);
 }
 
@@ -436,24 +436,24 @@ void BasicDrawPane::paintNow(bool render_loop_on) {
 //Main Render(iteration) Section
 void BasicDrawPane::render(wxDC& dc, bool render_loop_on) {
 	dis = cld.originalImg.clone();
-	cv::cvtColor(dis, dis, CV_GRAY2BGR);
+	cv::cvtColor(dis, dis, cv::COLOR_GRAY2BGR);
 
 	if (processingS == MODE_ETF) {
 		processing.ETF(cld.etf.flowField, dis,10,2);
 		dis.convertTo(dis, CV_8UC1, 255);
-		cv::cvtColor(dis, dis, CV_GRAY2BGR);
+		cv::cvtColor(dis, dis, cv::COLOR_GRAY2BGR);
 	}
 	else if (processingS == MODE_ETF_DEBUG) {
 		processing.FlowField(cld.etf.flowField, dis);
 	}
 	else if (processingS == MODE_CLD) {
 		dis = cld.result.clone();
-		cv::cvtColor(dis, dis, CV_GRAY2BGR);
+		cv::cvtColor(dis, dis, cv::COLOR_GRAY2BGR);
 	}
 	else if (processingS == MODE_ANTI_ALIASING) {
 		dis = cld.result.clone();
 		processing.AntiAlias(dis, dis);
-		cv::cvtColor(dis, dis, CV_GRAY2BGR);
+		cv::cvtColor(dis, dis, cv::COLOR_GRAY2BGR);
 	}
 
 	wxImage img(dis.cols, dis.rows, dis.data, true);

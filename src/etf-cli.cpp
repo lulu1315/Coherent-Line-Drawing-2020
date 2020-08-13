@@ -51,7 +51,7 @@ int main(int argc, char **argv)
         {
         PP processing(cv::Size(cld.originalImg.cols, cld.originalImg.rows));
         cv::Mat preview = cld.originalImg.clone();
-        cv::cvtColor(preview, preview, CV_GRAY2BGR);
+        cv::cvtColor(preview, preview, cv::COLOR_GRAY2BGR);
         processing.ETF(cld.etf.flowField, preview,10,2);
     
         //preview.convertTo(preview, CV_8U,255,0);
@@ -70,11 +70,11 @@ int main(int argc, char **argv)
         
     //convert to RGB for outside compatibility
     //and write as .exr
-    cv::cvtColor(cld.etf.gradientField, cld.etf.gradientField, CV_BGR2RGB);
+    cv::cvtColor(cld.etf.gradientField, cld.etf.gradientField, cv::COLOR_BGR2RGB);
     cv::imwrite(outputgradient, cld.etf.gradientField);
     //cv::cvtColor(cld.etf.gradientMag, cld.etf.gradientMag, CV_BGR2RGB);
     //cv::imwrite(outputgradient, cld.etf.gradientMag);
-    cv::cvtColor(cld.etf.flowField, cld.etf.flowField, CV_BGR2RGB);
+    cv::cvtColor(cld.etf.flowField, cld.etf.flowField, cv::COLOR_BGR2RGB);
     cv::imwrite(outputtangent, cld.etf.flowField);
     
 }

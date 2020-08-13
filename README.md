@@ -33,7 +33,7 @@ Usage : cld-cli inputfile inputflowfile FDoGiterations sigma_m sigma_c rho tau o
         
 ## Build
 
-    sudo apt install libwxgtk3.0-dev (Ubuntu 18.04) 
+    sudo apt install libwxgtk3.0-gtk3-dev (Ubuntu 20.04) 
     cd path/to/Coherent-Line-Drawing
     mkdir build;cd build
     cmake

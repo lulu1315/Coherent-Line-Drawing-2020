@@ -4,11 +4,11 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/shared/foss-18/Coherent-Line-Drawing/src/CLD.cpp" "/shared/foss-18/Coherent-Line-Drawing/build/CMakeFiles/CLD-gui.dir/src/CLD.cpp.o"
-  "/shared/foss-18/Coherent-Line-Drawing/src/ETF.cpp" "/shared/foss-18/Coherent-Line-Drawing/build/CMakeFiles/CLD-gui.dir/src/ETF.cpp.o"
-  "/shared/foss-18/Coherent-Line-Drawing/src/gui.cpp" "/shared/foss-18/Coherent-Line-Drawing/build/CMakeFiles/CLD-gui.dir/src/gui.cpp.o"
-  "/shared/foss-18/Coherent-Line-Drawing/src/main.cpp" "/shared/foss-18/Coherent-Line-Drawing/build/CMakeFiles/CLD-gui.dir/src/main.cpp.o"
-  "/shared/foss-18/Coherent-Line-Drawing/src/postProcessing.cpp" "/shared/foss-18/Coherent-Line-Drawing/build/CMakeFiles/CLD-gui.dir/src/postProcessing.cpp.o"
+  "/shared/foss-20/Coherent-Line-Drawing-2020/src/CLD.cpp" "/shared/foss-20/Coherent-Line-Drawing-2020/build/CMakeFiles/CLD-gui.dir/src/CLD.cpp.o"
+  "/shared/foss-20/Coherent-Line-Drawing-2020/src/ETF.cpp" "/shared/foss-20/Coherent-Line-Drawing-2020/build/CMakeFiles/CLD-gui.dir/src/ETF.cpp.o"
+  "/shared/foss-20/Coherent-Line-Drawing-2020/src/gui.cpp" "/shared/foss-20/Coherent-Line-Drawing-2020/build/CMakeFiles/CLD-gui.dir/src/gui.cpp.o"
+  "/shared/foss-20/Coherent-Line-Drawing-2020/src/main.cpp" "/shared/foss-20/Coherent-Line-Drawing-2020/build/CMakeFiles/CLD-gui.dir/src/main.cpp.o"
+  "/shared/foss-20/Coherent-Line-Drawing-2020/src/postProcessing.cpp" "/shared/foss-20/Coherent-Line-Drawing-2020/build/CMakeFiles/CLD-gui.dir/src/postProcessing.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -22,9 +22,9 @@ set(CMAKE_TARGET_DEFINITIONS_CXX
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "../include"
-  "/usr/lib/x86_64-linux-gnu/wx/include/gtk2-unicode-3.0"
+  "/usr/lib/x86_64-linux-gnu/wx/include/gtk3-unicode-3.0"
   "/usr/include/wx-3.0"
-  "/usr/include/opencv"
+  "/usr/include/opencv4"
   )
 
 # Targets to which this target links.

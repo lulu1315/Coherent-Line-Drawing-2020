@@ -1,10 +1,10 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/ETF-cli.dir/src/etf-cli.cpp.o"
-  "CMakeFiles/ETF-cli.dir/src/ETF.cpp.o"
   "CMakeFiles/ETF-cli.dir/src/CLD.cpp.o"
+  "CMakeFiles/ETF-cli.dir/src/ETF.cpp.o"
+  "CMakeFiles/ETF-cli.dir/src/etf-cli.cpp.o"
   "CMakeFiles/ETF-cli.dir/src/postProcessing.cpp.o"
-  "ETF-cli.pdb"
   "ETF-cli"
+  "ETF-cli.pdb"
 )
 
 # Per-language clean rules from dependency scanning.

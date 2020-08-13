@@ -1,11 +1,11 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/CLD-gui.dir/src/main.cpp.o"
-  "CMakeFiles/CLD-gui.dir/src/ETF.cpp.o"
-  "CMakeFiles/CLD-gui.dir/src/CLD.cpp.o"
-  "CMakeFiles/CLD-gui.dir/src/postProcessing.cpp.o"
-  "CMakeFiles/CLD-gui.dir/src/gui.cpp.o"
-  "CLD-gui.pdb"
   "CLD-gui"
+  "CLD-gui.pdb"
+  "CMakeFiles/CLD-gui.dir/src/CLD.cpp.o"
+  "CMakeFiles/CLD-gui.dir/src/ETF.cpp.o"
+  "CMakeFiles/CLD-gui.dir/src/gui.cpp.o"
+  "CMakeFiles/CLD-gui.dir/src/main.cpp.o"
+  "CMakeFiles/CLD-gui.dir/src/postProcessing.cpp.o"
 )
 
 # Per-language clean rules from dependency scanning.

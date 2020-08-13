@@ -1,10 +1,10 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/CLD-oflow-cli.dir/src/cld-oflow-cli.cpp.o"
-  "CMakeFiles/CLD-oflow-cli.dir/src/ETF.cpp.o"
-  "CMakeFiles/CLD-oflow-cli.dir/src/CLD.cpp.o"
-  "CMakeFiles/CLD-oflow-cli.dir/src/postProcessing.cpp.o"
-  "CLD-oflow-cli.pdb"
   "CLD-oflow-cli"
+  "CLD-oflow-cli.pdb"
+  "CMakeFiles/CLD-oflow-cli.dir/src/CLD.cpp.o"
+  "CMakeFiles/CLD-oflow-cli.dir/src/ETF.cpp.o"
+  "CMakeFiles/CLD-oflow-cli.dir/src/cld-oflow-cli.cpp.o"
+  "CMakeFiles/CLD-oflow-cli.dir/src/postProcessing.cpp.o"
 )
 
 # Per-language clean rules from dependency scanning.
