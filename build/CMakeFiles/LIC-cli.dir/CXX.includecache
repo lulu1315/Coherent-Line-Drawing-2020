@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/postProcessing.h
+stdio.h
+-
+opencv2/opencv.hpp
+-
+
+/shared/foss-18/Coherent-Line-Drawing/src/lic-cli.cpp
+cstdio
+-
+opencv2/opencv.hpp
+-
+postProcessing.h
+/shared/foss-18/Coherent-Line-Drawing/src/postProcessing.h
+
+/shared/foss-18/Coherent-Line-Drawing/src/postProcessing.cpp
+postProcessing.h
+/shared/foss-18/Coherent-Line-Drawing/src/postProcessing.h
+

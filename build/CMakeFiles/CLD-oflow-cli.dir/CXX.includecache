@@ -1,0 +1,42 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/CLD.h
+stdio.h
+-
+opencv2/opencv.hpp
+-
+ETF.h
+../include/ETF.h
+
+../include/ETF.h
+stdio.h
+-
+opencv2/opencv.hpp
+-
+
+../include/postProcessing.h
+stdio.h
+-
+opencv2/opencv.hpp
+-
+
+/shared/foss-18/Coherent-Line-Drawing/src/cld-oflow-cli.cpp
+cstdio
+-
+opencv2/opencv.hpp
+-
+CLD.h
+/shared/foss-18/Coherent-Line-Drawing/src/CLD.h
+postProcessing.h
+/shared/foss-18/Coherent-Line-Drawing/src/postProcessing.h
+
+/shared/foss-18/Coherent-Line-Drawing/src/postProcessing.cpp
+postProcessing.h
+/shared/foss-18/Coherent-Line-Drawing/src/postProcessing.h
+

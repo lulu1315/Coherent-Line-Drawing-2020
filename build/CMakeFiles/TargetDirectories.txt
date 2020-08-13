@@ -1,0 +1,8 @@
+/shared/foss-18/Coherent-Line-Drawing/build/CMakeFiles/rebuild_cache.dir
+/shared/foss-18/Coherent-Line-Drawing/build/CMakeFiles/edit_cache.dir
+/shared/foss-18/Coherent-Line-Drawing/build/CMakeFiles/CLD-cli.dir
+/shared/foss-18/Coherent-Line-Drawing/build/CMakeFiles/CLD-gui.dir
+/shared/foss-18/Coherent-Line-Drawing/build/CMakeFiles/ETF-cli.dir
+/shared/foss-18/Coherent-Line-Drawing/build/CMakeFiles/CLD-oflow-cli.dir
+/shared/foss-18/Coherent-Line-Drawing/build/CMakeFiles/LIC-cli.dir
+/shared/foss-18/Coherent-Line-Drawing/build/CMakeFiles/LIC_image-cli.dir
